@@ -2,7 +2,6 @@
 
 while true
 do
-    hurl --test *.hurl \
-         --report-html report
+    hurl *.hurl
     sleep 3
 done
