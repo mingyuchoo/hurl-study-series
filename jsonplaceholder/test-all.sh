@@ -4,10 +4,9 @@ rm -rf report-backup
 mv report report-backup
 rm -rf report
 
-
-while true
+for file in $(find . -type f -name "*.hurl")
 do
-    hurl --test *.hurl \
+    hurl --test ${file} \
          --report-html report
     sleep 3
 done

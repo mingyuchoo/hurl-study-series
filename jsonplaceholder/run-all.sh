@@ -1,7 +1,7 @@
 #! /bin/bash
 
-while true
+for file in $(find . -type f -name "*.hurl")
 do
-    hurl -v *.hurl
+    hurl -v ${file}
     sleep 3
 done
