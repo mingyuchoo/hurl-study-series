@@ -2,6 +2,6 @@
 
 while true
 do
-    hurl *.hurl
+    hurl -v *.hurl
     sleep 3
 done
